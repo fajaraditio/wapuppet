@@ -1,0 +1,21 @@
+{
+  "name": "whatsapp-puppet",
+  "version": "1.0.0",
+  "description": "Whatsapp Puppet",
+  "main": "wapuppet.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "qrcode": "^1.4.4",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.11.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "wapuppet"
+  ],
+  "author": "Aditio",
+  "license": "MIT"
+}
