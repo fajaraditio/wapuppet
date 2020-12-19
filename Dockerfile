@@ -8,8 +8,7 @@ RUN apt-get install -yyq fonts-liberation
 
 RUN mkdir -p /var/www
 WORKDIR /var/www
-
-ADD . /var/www
+COPY . /var/www
 
 RUN npm install
 
@@ -17,4 +16,4 @@ EXPOSE 8989
 
 CMD [ "npm", "run", "start" ]
 
-COPY . /var/www
+ADD . /var/www
