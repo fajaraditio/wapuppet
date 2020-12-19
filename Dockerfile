@@ -10,6 +10,8 @@ RUN mkdir -p /var/www
 WORKDIR /var/www
 VOLUME [ "/var/www" ]
 
+ENV PUPPETEER_EXECUTABLE_PATH="/usr/bin/google-chrome-stable"
+
 COPY . /var/www
 RUN npm install
 
