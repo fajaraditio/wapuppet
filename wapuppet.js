@@ -124,7 +124,7 @@ io.on('connection', (socket) => {
 app.post('/', [
     body('phone_number').notEmpty(),
     body('message').notEmpty(),
-], async (req, res) => {
+], (req, res) => {
 
     const errors = validationResult(req).formatWith(({ msg }) => { return msg; });
 
@@ -136,7 +136,7 @@ app.post('/', [
         })
     }
 
-    let phoneNumber = formattingPhoneNumber(req.body.phone_number)
+    let phoneNumber = req.body.phone_number
     let message = req.body.message
 
     client.isRegisteredUser(`${phoneNumber}@c.us`).then(isRegistered => {
