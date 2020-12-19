@@ -1,5 +1,6 @@
 FROM node:12
 
+RUN apt-get install chromium-browser
 RUN mkdir -p /var/www
 WORKDIR /var/www
 
