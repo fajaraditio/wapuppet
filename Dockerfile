@@ -15,6 +15,4 @@ RUN npm install
 
 EXPOSE 8989
 
-VOLUME /var/www
-
 CMD [ "npm", "run", "start" ]
