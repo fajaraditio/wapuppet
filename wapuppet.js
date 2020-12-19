@@ -27,6 +27,7 @@ const Auth = (username, password) => {
 app.use(basicAuth({
     authorizer: Auth,
     challenge: true,
+    realm: 'indohprekber'
     // authorizeAsync: true
 }))
 
