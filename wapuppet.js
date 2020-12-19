@@ -124,7 +124,7 @@ io.on('connection', (socket) => {
 app.post('/', [
     body('phone_number').notEmpty(),
     body('message').notEmpty(),
-], (req, res) => {
+], async (req, res) => {
 
     const errors = validationResult(req).formatWith(({ msg }) => { return msg; });
 
