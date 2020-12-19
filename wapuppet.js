@@ -158,6 +158,8 @@ app.post('/', [
         }
     })
 
+    res.end()
+
 })
 
 server.listen(port, () => {
