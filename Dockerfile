@@ -12,8 +12,6 @@ WORKDIR /var/www
 COPY . /var/www
 RUN npm install
 
-VOLUME [ "/var/www" ]
-
 EXPOSE 8989
 
 CMD [ "npm", "run", "start" ]

@@ -2,6 +2,8 @@ version: "2"
 services:
   rekber-wapuppet-node:
     container_name: "rekber-wapuppet-node"
+    volumes:
+      - .:/var/www
     build:
       context: .
       dockerfile: ./Dockerfile
