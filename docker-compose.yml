@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: ./Dockerfile
     ports:
-      - "9002:3000"
+      - "9002:8989"
     networks:
       rekber-net:
 

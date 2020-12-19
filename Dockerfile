@@ -12,6 +12,6 @@ WORKDIR /var/www
 COPY . /var/www
 RUN npm install
 
-EXPOSE 3000
+EXPOSE 8989
 
 CMD [ "npm", "run", "start" ]
