@@ -17,14 +17,14 @@ const io = socketIO(server)
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-const Auth = (username, password) => {
-    const matchUser = basicAuth.safeCompare(username, process.env.CLIENT_KEY)
-    const matchPass = basicAuth.safeCompare(password, process.env.CLIENT_SECRET)
+// const Auth = (username, password) => {
+//     const matchUser = basicAuth.safeCompare(username, process.env.CLIENT_KEY)
+//     const matchPass = basicAuth.safeCompare(password, process.env.CLIENT_SECRET)
 
-    return matchUser & matchPass
-}
+//     return matchUser & matchPass
+// }
 
-app.use(basicAuth({ authorizer: Auth }))
+// app.use(basicAuth({ authorizer: Auth }))
 
 const SESSION_FILE_PATH = './session.json'
 
