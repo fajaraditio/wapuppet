@@ -122,7 +122,7 @@ io.on('connection', (socket) => {
 });
 
 app.post('/', [
-    body('phone_number').notEmpty(),
+    body('phoneNumber').notEmpty(),
     body('message').notEmpty(),
 ], (req, res) => {
 
