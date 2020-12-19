@@ -24,7 +24,7 @@ const Auth = (username, password) => {
     return matchUser & matchPass
 }
 
-app.use(basicAuth({ authorizer: Auth, challenge: true }))
+app.use(basicAuth({ authorizer: Auth}))
 
 const SESSION_FILE_PATH = './session.json'
 
