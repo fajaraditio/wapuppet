@@ -5,8 +5,6 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
-    volumes:
-      - .:/var/www
     ports:
       - "9002:8989"
     networks:
