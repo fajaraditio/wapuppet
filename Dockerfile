@@ -10,10 +10,11 @@ RUN mkdir -p /var/www
 WORKDIR /var/www
 COPY . /var/www
 ADD . /var/www
-VOLUME /var/www
 
 RUN npm install
 
 EXPOSE 8989
+
+VOLUME /var/www
 
 CMD [ "npm", "run", "start" ]
