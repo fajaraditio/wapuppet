@@ -5,11 +5,10 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
-    command: ["npm install", "&&", "npm run start"]
-    expose:
-      - 8989
     volumes:
-      - ".:/var/www"
+      - .:/var/www
+      - /var/www/node_modules
+      - /var/www/session.js
     ports:
       - "9002:8989"
     networks:
