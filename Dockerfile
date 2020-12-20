@@ -12,10 +12,11 @@ WORKDIR /var/www
 COPY package.json /var/www
 COPY session.json /var/www
 
+RUN npm install -g nodemon
 RUN npm install
 
 COPY . /var/www
 
 EXPOSE 8989
 
-ENTRYPOINT [ "npm", "run", "start" ]
+ENTRYPOINT [ "nodemon", "wapuppet.js"]
