@@ -164,6 +164,6 @@ app.post('/', [
     })
 })
 
-server.listen(port, () => {
+server.listen(port, '0.0.0.0', () => {
     console.log(`Whatsapp puppet listening at http://localhost:${port}`)
 })
