@@ -5,6 +5,9 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
+    command: ["npm install", "&&", "npm run start"]
+    expose:
+      - 8989
     volumes:
       - ".:/var/www"
     ports:
