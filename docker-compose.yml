@@ -8,7 +8,6 @@ services:
     volumes:
       - .:/var/www
       - /var/www/node_modules
-      - /var/www/session.js
     ports:
       - "9002:8989"
     networks:
